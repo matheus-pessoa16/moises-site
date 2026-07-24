@@ -9,6 +9,7 @@ import SobrePage from './pages/SobrePage.jsx';
 import ContatoPage from './pages/ContatoPage.jsx';
 import PrivacyPage from './pages/PrivacyPage.jsx';
 import TermosPage from './pages/TermosPage.jsx';
+import TrabalheConoscoPage from './pages/TrabalheConoscoPage.jsx';
 
 function NotFound() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/contato" element={<ContatoPage />} />
         <Route path="/privacidade" element={<PrivacyPage />} />
         <Route path="/termos" element={<TermosPage />} />
+        <Route path="/trabalhe-conosco" element={<TrabalheConoscoPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
