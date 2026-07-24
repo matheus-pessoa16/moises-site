@@ -6,20 +6,20 @@
 
 @layer base {
   :root {
-    /* Base UI */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 26%; /* Dark Gray */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 26%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 26%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --radius: 0.75rem;
+    /* Base UI — Moisés Visual Identity */
+    --background: 224 97% 15%; /* #01154A — Navy */
+    --foreground: 192 85% 92%; /* #DAF5FC — Light Blue subtitles */
+    --card: 224 80% 20%; /* Slightly lighter navy */
+    --card-foreground: 192 85% 92%;
+    --popover: 224 80% 20%;
+    --popover-foreground: 192 85% 92%;
+    --border: 224 50% 30%; /* Subtle border on dark bg */
+    --input: 224 50% 30%;
+    --radius: 0.7rem;
 
-    /* Vibrant Palette */
-    --primary: 216 100% 40%; /* Bright Blue #0052CC */
-    --primary-foreground: 0 0% 100%;
+    /* Accent Palette */
+    --primary: 192 85% 92%; /* #DAF5FC */
+    --primary-foreground: 224 97% 15%;
     
     --secondary: 187 100% 42%; /* Cyan #00BCD4 */
     --secondary-foreground: 0 0% 100%;
@@ -27,54 +27,27 @@
     --accent: 340 82% 52%; /* Magenta #E91E63 */
     --accent-foreground: 0 0% 100%;
     
-    --success: 145 100% 39%; /* Green #00C853 */
+    --success: 145 100% 39%;
     --success-foreground: 0 0% 100%;
     
-    --warning: 34 100% 50%; /* Orange #FF9100 */
+    --warning: 34 100% 50%;
     --warning-foreground: 0 0% 100%;
     
-    --destructive: 14 100% 50%; /* Red #FF3D00 */
+    --destructive: 14 100% 50%;
     --destructive-foreground: 0 0% 100%;
     
-    --navy: 220 100% 18%; /* Dark Blue #001F5C */
+    --navy: 224 97% 15%; /* #01154A */
     --navy-foreground: 0 0% 100%;
     
-    --gold: 50 100% 50%; /* Yellow #FFD600 */
+    --gold: 50 100% 50%;
     --gold-foreground: 0 0% 11%;
     
-    --dark-gray: 0 0% 26%; /* Dark Gray #424242 */
+    --dark-gray: 0 0% 26%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 224 50% 22%;
+    --muted-foreground: 192 50% 75%;
     
-    --ring: 216 100% 40%;
-  }
-
-  .dark {
-    --background: 220 100% 12%; /* Deeper navy base for dark mode */
-    --foreground: 210 40% 98%;
-    --card: 220 100% 16%;
-    --card-foreground: 210 40% 98%;
-    --popover: 220 100% 16%;
-    --popover-foreground: 210 40% 98%;
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-
-    --primary: 216 100% 60%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 187 100% 50%;
-    --secondary-foreground: 0 0% 100%;
-    --accent: 340 82% 60%;
-    --success: 145 100% 45%;
-    --warning: 34 100% 60%;
-    --destructive: 14 100% 60%;
-    --navy: 220 100% 25%;
-    --gold: 50 100% 60%;
-    --dark-gray: 0 0% 40%;
-
-    --muted: 217 33% 22%;
-    --muted-foreground: 215 20% 75%;
-    --ring: 216 100% 60%;
+    --ring: 192 85% 92%; /* Visible focus on dark bg */
   }
 
   * {
@@ -95,11 +68,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-    color: hsl(var(--navy));
-  }
-
-  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    color: hsl(var(--foreground));
+    color: hsl(0 0% 100%); /* #FFFFFF — primary titles */
   }
 
   p {
