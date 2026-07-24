@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, MessageCircle } from 'lucide-react';
+import { LOGO_URL, INSTAGRAM_URL, WHATSAPP_URL } from '@/config/site';
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
           <div className="space-y-6">
             <Link to="/" className="inline-block bg-white p-3 rounded-xl shadow-lg">
               <img 
-                src="https://horizons-cdn.hostinger.com/8cf04d40-a2cd-4e8d-966c-90768c888606/5ea1af3ebe89af2e50513893b2ba274f.png" 
+                src={LOGO_URL} 
                 alt="Moisés Nunes Comunicação Visual" 
                 className="h-10 w-auto object-contain"
               />
@@ -39,6 +40,9 @@ function Footer() {
               </Link>
               <Link to="/contato" className="text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
                 Contato
+              </Link>
+              <Link to="/trabalhe-conosco" className="text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
+                Trabalhe Conosco
               </Link>
               <Link to="/privacidade" className="text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
                 Política de Privacidade
@@ -79,16 +83,7 @@ function Footer() {
             <span className="font-bold text-white block mb-6 uppercase tracking-wider text-sm">Redes sociais</span>
             <div className="flex gap-3 mb-8">
               <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[hsl(var(--primary))] hover:text-white transition-all duration-300 hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a 
-                href="https://instagram.com" 
+                href={INSTAGRAM_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[hsl(var(--accent))] hover:text-white transition-all duration-300 hover:scale-110"
@@ -97,13 +92,13 @@ function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href={WHATSAPP_URL('Olá! Gostaria de mais informações sobre comunicação visual.')} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[hsl(var(--secondary))] hover:text-white transition-all duration-300 hover:scale-110"
-                aria-label="LinkedIn"
+                aria-label="WhatsApp"
               >
-                <Linkedin className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
               </a>
             </div>
             <div className="bg-white/5 p-4 rounded-xl text-sm border border-white/10">
