@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base UI */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 26%; /* Dark Gray */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 26%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 26%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --radius: 0.75rem;
+
+    /* Vibrant Palette */
+    --primary: 216 100% 40%; /* Bright Blue #0052CC */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 187 100% 42%; /* Cyan #00BCD4 */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 340 82% 52%; /* Magenta #E91E63 */
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 145 100% 39%; /* Green #00C853 */
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 34 100% 50%; /* Orange #FF9100 */
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 14 100% 50%; /* Red #FF3D00 */
+    --destructive-foreground: 0 0% 100%;
+    
+    --navy: 220 100% 18%; /* Dark Blue #001F5C */
+    --navy-foreground: 0 0% 100%;
+    
+    --gold: 50 100% 50%; /* Yellow #FFD600 */
+    --gold-foreground: 0 0% 11%;
+    
+    --dark-gray: 0 0% 26%; /* Dark Gray #424242 */
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --ring: 216 100% 40%;
+  }
+
+  .dark {
+    --background: 220 100% 12%; /* Deeper navy base for dark mode */
+    --foreground: 210 40% 98%;
+    --card: 220 100% 16%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 100% 16%;
+    --popover-foreground: 210 40% 98%;
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+
+    --primary: 216 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 187 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 340 82% 60%;
+    --success: 145 100% 45%;
+    --warning: 34 100% 60%;
+    --destructive: 14 100% 60%;
+    --navy: 220 100% 25%;
+    --gold: 50 100% 60%;
+    --dark-gray: 0 0% 40%;
+
+    --muted: 217 33% 22%;
+    --muted-foreground: 215 20% 75%;
+    --ring: 216 100% 60%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: clip;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    color: hsl(var(--navy));
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: hsl(var(--foreground));
+  }
+
+  p {
+    max-width: 65ch;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Vibrant Gradient Utilities */
+  .gradient-primary-secondary {
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    color: white;
+    border: none;
+  }
+  
+  .gradient-primary-secondary:hover {
+    background-image: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--secondary) / 0.9));
+    box-shadow: 0 4px 14px 0 hsl(var(--primary) / 0.3);
+  }
+
+  .gradient-warm {
+    background-image: linear-gradient(135deg, hsl(var(--warning)), hsl(var(--destructive)));
+    color: white;
+    border: none;
+  }
+  
+  .gradient-warm:hover {
+    background-image: linear-gradient(135deg, hsl(var(--warning) / 0.9), hsl(var(--destructive) / 0.9));
+    box-shadow: 0 4px 14px 0 hsl(var(--destructive) / 0.3);
+  }
+
+  .gradient-accent {
+    background-image: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
+    color: white;
+    border: none;
+  }
+}
