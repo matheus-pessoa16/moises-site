@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { WhatsAppButton } from '@/components/WhatsAppLink.jsx';
+import { LOGO_URL } from '@/config/site';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +16,7 @@ function Header() {
     { path: '/galeria', label: 'Galeria' },
     { path: '/sobre', label: 'Sobre' },
     { path: '/contato', label: 'Contato' },
-    // { path: '/privacidade', label: 'Privacidade' },
-    // { path: '/termos', label: 'Termos' },
+    { path: '/trabalhe-conosco', label: 'Trabalhe Conosco' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -27,7 +28,7 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="https://horizons-cdn.hostinger.com/8cf04d40-a2cd-4e8d-966c-90768c888606/5ea1af3ebe89af2e50513893b2ba274f.png" 
+              src={LOGO_URL} 
               alt="Moisés Nunes Comunicação Visual" 
               className="h-12 w-auto object-contain"
             />
@@ -42,7 +43,7 @@ function Header() {
                 className={`text-sm font-semibold transition-colors duration-200 hover:text-primary ${
                   isActive(link.path) 
                     ? 'text-primary border-b-2 border-primary pb-1' 
-                    : 'text-[hsl(var(--dark-gray))]'
+                    : 'text-foreground'
                 }`}
               >
                 {link.label}
@@ -52,18 +53,19 @@ function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Button asChild size="default" className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98]">
-              <Link to="/contato">
-                <Phone className="w-4 h-4 mr-2" />
-                Solicitar orçamento
-              </Link>
-            </Button>
+            <WhatsAppButton
+              message="Olá! Gostaria de solicitar um orçamento para comunicação visual."
+              size="default"
+              className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98]"
+            >
+              Solicitar orçamento
+            </WhatsAppButton>
           </div>
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="text-[hsl(var(--navy))]">
+              <Button variant="ghost" size="icon" className="text-white">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
@@ -75,18 +77,21 @@ function Header() {
                     to={link.path}
                     onClick={() => setIsOpen(false)}
                     className={`text-lg font-semibold transition-colors duration-200 hover:text-primary py-2 ${
-                      isActive(link.path) ? 'text-primary' : 'text-[hsl(var(--dark-gray))]'
+                      isActive(link.path) ? 'text-primary' : 'text-foreground'
                     }`}
                   >
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild size="lg" className="mt-4 gradient-primary-secondary transition-all duration-300 active:scale-[0.98]">
-                  <Link to="/contato" onClick={() => setIsOpen(false)}>
-                    <Phone className="w-4 h-4 mr-2" />
+                <div className="mt-4">
+                  <WhatsAppButton
+                    message="Olá! Gostaria de solicitar um orçamento para comunicação visual."
+                    size="lg"
+                    className="w-full gradient-primary-secondary transition-all duration-300 active:scale-[0.98]"
+                  >
                     Solicitar orçamento
-                  </Link>
-                </Button>
+                  </WhatsAppButton>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
