@@ -7,6 +7,9 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ServiceCard from '@/components/ServiceCard.jsx';
+import CampaignBanner from '@/components/CampaignBanner.jsx';
+import CampaignCards from '@/components/CampaignCards.jsx';
+import { WhatsAppButton } from '@/components/WhatsAppLink.jsx';
 function HomePage() {
   const services = [
     {
@@ -96,6 +99,9 @@ function HomePage() {
       <div className="min-h-screen flex flex-col">
         <Header />
 
+        {/* Campaign Banner */}
+        <CampaignBanner />
+
         {/* Hero Section */}
         <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[hsl(var(--navy))]">
           <div className="absolute inset-0 z-0">
@@ -128,12 +134,14 @@ function HomePage() {
                   Soluções criativas e vibrantes em impressão, LED e personalização para destacar seu evento e negócio.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild size="lg" className="gradient-primary-secondary h-14 px-8 text-lg shadow-lg hover:shadow-[hsl(var(--primary))/30] transition-all duration-300 active:scale-[0.98]">
-                    <Link to="/contato">
-                      Solicitar orçamento
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Link>
-                  </Button>
+                  <WhatsAppButton
+                    message="Olá! Gostaria de solicitar um orçamento para comunicação visual."
+                    size="lg"
+                    className="gradient-primary-secondary h-14 px-8 text-lg shadow-lg hover:shadow-[hsl(var(--primary))/30] transition-all duration-300 active:scale-[0.98]"
+                  >
+                    Solicitar orçamento
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </WhatsAppButton>
                   <Button asChild size="lg" className="h-14 px-8 text-lg bg-white text-[hsl(var(--navy))] hover:bg-white/90 shadow-lg transition-all duration-300 active:scale-[0.98]">
                     <Link to="/servicos">
                       Conheça nossos serviços
@@ -164,7 +172,7 @@ function HomePage() {
             }} transition={{
               duration: 0.5
             }}>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-[hsl(var(--navy))]">Nossos serviços</h2>
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white">Nossos serviços</h2>
                 <div className="w-24 h-1.5 bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--secondary))] mx-auto mb-6 rounded-full"></div>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Oferecemos soluções completas em comunicação visual com cores vibrantes, qualidade superior e execução impecável.
@@ -177,6 +185,9 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* Campaign Cards */}
+        <CampaignCards />
 
         {/* CTA Section */}
         <section className="py-24 relative overflow-hidden">
@@ -202,12 +213,14 @@ function HomePage() {
               <p className="text-xl mb-10 text-white/80 leading-relaxed max-w-2xl mx-auto">
                 Transforme o visual da sua marca com a nossa expertise. Solicite um orçamento sem compromisso e veja suas ideias ganharem vida.
               </p>
-              <Button asChild size="lg" className="gradient-warm h-14 px-10 text-lg shadow-[0_0_30px_hsl(var(--warning))/30] transition-all duration-300 active:scale-[0.98]">
-                <Link to="/contato">
-                  Fale conosco agora
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
+              <WhatsAppButton
+                message="Olá! Gostaria de falar sobre um projeto de comunicação visual."
+                size="lg"
+                className="gradient-warm h-14 px-10 text-lg shadow-[0_0_30px_hsl(var(--warning))/30] transition-all duration-300 active:scale-[0.98]"
+              >
+                Fale conosco agora
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </WhatsAppButton>
             </motion.div>
           </div>
         </section>
