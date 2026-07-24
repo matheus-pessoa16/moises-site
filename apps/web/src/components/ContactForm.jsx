@@ -27,14 +27,14 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <Label htmlFor="name" className="text-sm font-semibold mb-2 block text-[hsl(var(--navy))]">
+        <Label htmlFor="name" className="text-sm font-semibold mb-2 block text-white">
           Nome completo
         </Label>
         <Input
           id="name"
           type="text"
           placeholder="Seu nome"
-          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))]"
+          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))] h-12 text-base"
           {...register('name', { required: 'Nome é obrigatório' })}
         />
         {errors.name && (
@@ -43,14 +43,14 @@ function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="email" className="text-sm font-semibold mb-2 block text-[hsl(var(--navy))]">
+        <Label htmlFor="email" className="text-sm font-semibold mb-2 block text-white">
           E-mail
         </Label>
         <Input
           id="email"
           type="email"
           placeholder="seu@email.com"
-          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))]"
+          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))] h-12 text-base"
           {...register('email', { 
             required: 'E-mail é obrigatório',
             pattern: {
@@ -65,14 +65,14 @@ function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="phone" className="text-sm font-semibold mb-2 block text-[hsl(var(--navy))]">
+        <Label htmlFor="phone" className="text-sm font-semibold mb-2 block text-white">
           Telefone
         </Label>
         <Input
           id="phone"
           type="tel"
           placeholder="(00) 00000-0000"
-          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))]"
+          className="text-foreground placeholder:text-muted-foreground focus-visible:ring-[hsl(var(--primary))] h-12 text-base"
           {...register('phone', { required: 'Telefone é obrigatório' })}
         />
         {errors.phone && (
@@ -81,11 +81,11 @@ function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="service" className="text-sm font-semibold mb-2 block text-[hsl(var(--navy))]">
+        <Label htmlFor="service" className="text-sm font-semibold mb-2 block text-white">
           Serviço de interesse
         </Label>
         <Select onValueChange={(value) => setValue('service', value)}>
-          <SelectTrigger className="text-foreground focus:ring-[hsl(var(--primary))]">
+          <SelectTrigger className="text-foreground focus:ring-[hsl(var(--primary))] h-12 text-base">
             <SelectValue placeholder="Selecione um serviço" />
           </SelectTrigger>
           <SelectContent>
@@ -105,14 +105,14 @@ function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="message" className="text-sm font-semibold mb-2 block text-[hsl(var(--navy))]">
+        <Label htmlFor="message" className="text-sm font-semibold mb-2 block text-white">
           Mensagem
         </Label>
         <Textarea
           id="message"
           placeholder="Descreva seu projeto ou necessidade..."
-          rows={5}
-          className="text-foreground placeholder:text-muted-foreground resize-none focus-visible:ring-[hsl(var(--primary))]"
+          rows={6}
+          className="text-foreground placeholder:text-muted-foreground resize-none focus-visible:ring-[hsl(var(--primary))] text-base"
           {...register('message', { required: 'Mensagem é obrigatória' })}
         />
         {errors.message && (

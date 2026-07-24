@@ -58,8 +58,8 @@ function ContatoPage() {
               transition={{ duration: 0.5 }} 
               className="text-center max-w-3xl mx-auto"
             >
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-[hsl(var(--navy))]" style={{ letterSpacing: '-0.02em' }}>
-                Vamos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--warning))] to-[hsl(var(--destructive))]">conversar?</span>
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{ letterSpacing: '-0.02em' }}>
+                Vamos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))]">conversar?</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed font-medium">
                 Sua marca precisa de um upgrade visual? Preencha o formulário abaixo e receba um atendimento ágil e especializado.
@@ -71,7 +71,7 @@ function ContatoPage() {
         {/* Contact Section */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
               
               {/* Contact Form */}
               <motion.div 
@@ -79,11 +79,11 @@ function ContatoPage() {
                 animate={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 0.6 }}
               >
-                <div className="bg-card rounded-[2rem] p-8 md:p-10 shadow-2xl border border-border/50 relative overflow-hidden">
+                <div className="bg-card rounded-[2rem] p-10 md:p-14 shadow-2xl border border-border/50 relative overflow-hidden">
                   {/* Subtle top border accent */}
                   <div className="absolute top-0 left-0 right-0 h-2 gradient-primary-secondary"></div>
                   
-                  <h2 className="text-3xl font-extrabold mb-8 text-[hsl(var(--navy))]">Envie seu projeto</h2>
+                  <h2 className="text-3xl font-extrabold mb-8 text-white">Envie seu projeto</h2>
                   <ContactForm />
                 </div>
               </motion.div>
@@ -96,7 +96,7 @@ function ContatoPage() {
                 className="space-y-10"
               >
                 <div>
-                  <h2 className="text-3xl font-extrabold mb-8 text-[hsl(var(--navy))]">Canais de atendimento</h2>
+                  <h2 className="text-3xl font-extrabold mb-8 text-white">Canais de atendimento</h2>
                   <div className="grid gap-6">
                     {contactInfo.map((info, index) => (
                       <div key={index} className="flex gap-5 items-start p-4 rounded-2xl hover:bg-muted/50 transition-colors duration-300 group" style={{ '--info-color': `var(${info.color})` }}>
@@ -106,7 +106,7 @@ function ContatoPage() {
                           </div>
                         </div>
                         <div className="pt-1">
-                          <h3 className="font-bold text-[hsl(var(--navy))] mb-1 text-lg">{info.title}</h3>
+                          <h3 className="font-bold text-white mb-1 text-lg">{info.title}</h3>
                           {info.link ? (
                             <a href={info.link} className="text-muted-foreground hover:text-[hsl(var(--info-color))] font-medium transition-colors duration-200 text-lg">
                               {info.content}

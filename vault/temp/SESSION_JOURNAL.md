@@ -2476,3 +2476,158 @@
 - url: http://localhost:3000/sobre
 - via: replaceState
 
+## 2026-07-24 22:15:15.536Z load
+- url: http://localhost:3001/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:15:19.543Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contato"}
+
+## 2026-07-24 22:15:19.544Z navigate
+- url: http://localhost:3001/contato
+- via: pushState
+
+## 2026-07-24 22:16:03.588Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-24 22:16:03.589Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-24 22:16:16.282Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-24 22:16:16.915Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-24 22:16:17.641Z click
+- element: {"tag":"nav","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe Conosco"}
+
+## 2026-07-24 22:16:18.387Z click
+- element: {"tag":"nav","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe Conosco"}
+
+## 2026-07-24 22:16:19.098Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-07-24 22:16:19.099Z navigate
+- url: http://localhost:3001/
+- via: pushState
+
+## 2026-07-24 22:17:34.637Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:35.174Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:35.791Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:36.678Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:37.682Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:38.540Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:39.556Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:40.484Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:41.838Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:42.341Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:42.802Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:43.327Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:43.861Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:44.403Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:44.968Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:45.559Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:46.149Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:46.422Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-24 22:17:46.538Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"","valueLength":0,"text":""}
+
+## 2026-07-24 22:17:46.555Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-24 22:17:46.556Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-24 22:17:46.557Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"","valueLength":0,"text":""}
+
+## 2026-07-24 22:17:46.569Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-24 22:17:46.569Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-24 22:17:46.570Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-24 22:17:46.580Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-24 22:17:46.580Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-24 22:17:46.582Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":"message","type":null,"id":"careers-message","placeholder":"Conte sobre você e sua experiência...","label":"message","value":"","valueLength":0,"text":""}
+
+## 2026-07-24 22:17:48.247Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:48.985Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:50.214Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:17:50.745Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
