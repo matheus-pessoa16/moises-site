@@ -19,9 +19,6 @@ function HomePage() {
       <div className="min-h-screen flex flex-col">
         <Header />
 
-        {/* Campaign Banner */}
-        <CampaignBanner />
-
         {/* Hero Section */}
         <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[hsl(var(--navy))]">
           <div className="absolute inset-0 z-0">
@@ -72,6 +69,9 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* Campaign Banner */}
+        <CampaignBanner />
 
         {/* Campaign Cards */}
         <CampaignCards />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Instagram, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Instagram, MessageCircle } from 'lucide-react';
 import { LOGO_URL, INSTAGRAM_URL, WHATSAPP_URL } from '@/config/site';
 
 function Footer() {
@@ -11,9 +11,9 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link to="/" className="inline-block bg-white p-3 rounded-xl shadow-lg min-w-[100px]">
+            <Link to="/" className="inline-block min-w-[100px]">
               {logoError ? (
-                <span className="text-[hsl(var(--navy))] font-bold text-sm tracking-tight">Moisés Nunes</span>
+                <span className="text-white font-bold text-sm tracking-tight">Moisés Nunes</span>
               ) : (
                 <img
                   src={LOGO_URL}
@@ -65,9 +65,9 @@ function Footer() {
           <div>
             <span className="font-bold text-white block mb-6 uppercase tracking-wider text-sm">Contato</span>
             <div className="flex flex-col gap-4">
-              <a href="tel:+5584921768017" className="flex items-center gap-3 text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
+              <a href="https://web.whatsapp.com/send?phone=5584921768017" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-                  <Phone className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4" />
                 </div>
                 <span>(84) 92176-8017</span>
               </a>
