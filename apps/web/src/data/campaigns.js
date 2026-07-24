@@ -5,7 +5,7 @@ export const campaigns = [
     description: 'Confira as estruturas e cenografias que montamos para o maior evento do ano.',
     image: 'https://lh3.googleusercontent.com/d/1kYT20yjI-B6chpBdskr5ErMkRArqoyiZ=w1000?authuser=0',
     ctaText: 'Ver projeto',
-    ctaLink: '/galeria?categoria=finecap',
+    ctaLink: '/galeria?category=finecap',
   },
   {
     id: 'natal-na-serra',
@@ -13,7 +13,7 @@ export const campaigns = [
     description: 'Cenografia festiva de Natal em Portalegre/RN — um espetáculo visual imperdível.',
     image: 'https://lh3.googleusercontent.com/d/1hknoh1GflWnqIw6lcrzwBiHjlrTAdDte=w1000?authuser=0',
     ctaText: 'Ver projeto',
-    ctaLink: '/galeria?categoria=natal_na_serra',
+    ctaLink: '/galeria?category=natal_na_serra',
   },
   {
     id: 'trabalhe-conosco',

@@ -22,6 +22,8 @@ export default function CampaignCards() {
                   src={campaign.image}
                   alt={campaign.title}
                   className="w-full h-full object-contain"
+                  crossOrigin="anonymous"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="p-6">

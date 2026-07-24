@@ -13,6 +13,8 @@ export default function CampaignBanner() {
         src={CAMPAIGN_SVG_URL}
         alt="Campanhas Moisés Nunes Comunicação Visual"
         className={`w-full h-auto block ${imgError ? 'hidden' : ''}`}
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
         onError={() => setImgError(true)}
       />
     </section>

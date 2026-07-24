@@ -254,13 +254,25 @@ function ServicosPage() {
                         </div>
                       ))}
                     </div>
-                    <WhatsAppButton
-                      message="Olá! Gostaria de solicitar um orçamento."
-                      size="lg"
-                      className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98] shadow-md"
-                    >
-                      Solicitar orçamento
-                    </WhatsAppButton>
+                    <div className="flex flex-wrap gap-4">
+                      <WhatsAppButton
+                        message="Olá! Gostaria de solicitar um orçamento."
+                        size="lg"
+                        className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98] shadow-md"
+                      >
+                        Solicitar orçamento
+                      </WhatsAppButton>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="lg"
+                        className="border-[hsl(var(--section-accent))]/40 text-[hsl(var(--section-accent))] hover:bg-[hsl(var(--section-accent))]/10 transition-all duration-300"
+                      >
+                        <Link to={`/galeria?category=${service.id}`}>
+                          Ver na galeria
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                   <div className={index % 2 === 1 ? 'md:order-1' : ''}>
                     <div className="rounded-3xl overflow-hidden shadow-2xl relative group">

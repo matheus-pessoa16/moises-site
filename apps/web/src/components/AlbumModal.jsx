@@ -20,7 +20,7 @@ export default function AlbumModal({ album, isOpen, onClose }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden bg-card border-border">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden bg-card border-border px-16">
         <DialogHeader>
           <DialogTitle className="text-white">{album.title}</DialogTitle>
         </DialogHeader>
@@ -30,7 +30,7 @@ export default function AlbumModal({ album, isOpen, onClose }) {
             <CarouselContent>
               {album.media.map((item) => (
                 <CarouselItem key={item.subId}>
-                  <div className="flex items-center justify-center bg-muted/30 rounded-lg overflow-hidden" style={{ minHeight: '300px', maxHeight: '70vh' }}>
+                  <div className="flex items-center justify-center bg-muted/30 rounded-lg overflow-hidden h-[60vh]">
                     {item.type === 'google-drive-video' ? (
                       <div className="w-full text-center p-4">
                         <iframe
@@ -54,7 +54,8 @@ export default function AlbumModal({ album, isOpen, onClose }) {
                         src={item.url}
                         alt={item.title || album.title}
                         className="w-full h-full object-contain"
-                        style={{ maxHeight: '70vh' }}
+                        crossOrigin="anonymous"
+                        referrerPolicy="no-referrer"
                       />
                     )}
                   </div>

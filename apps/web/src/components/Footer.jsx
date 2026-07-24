@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Instagram, MessageCircle } from 'lucide-react';
 import { LOGO_URL, INSTAGRAM_URL, WHATSAPP_URL } from '@/config/site';
 
 function Footer() {
+  const [logoError, setLogoError] = useState(false)
   return (
     <footer className="bg-[hsl(var(--navy))] text-white border-t border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link to="/" className="inline-block bg-white p-3 rounded-xl shadow-lg">
-              <img 
-                src={LOGO_URL} 
-                alt="Moisés Nunes Comunicação Visual" 
-                className="h-10 w-auto object-contain"
-              />
+            <Link to="/" className="inline-block bg-white p-3 rounded-xl shadow-lg min-w-[100px]">
+              {logoError ? (
+                <span className="text-[hsl(var(--navy))] font-bold text-sm tracking-tight">Moisés Nunes</span>
+              ) : (
+                <img
+                  src={LOGO_URL}
+                  alt="Moisés Nunes Comunicação Visual"
+                  className="h-10 w-auto object-contain"
+                  crossOrigin="anonymous"
+                  referrerPolicy="no-referrer"
+                  onError={() => setLogoError(true)}
+                />
+              )}
             </Link>
             <p className="text-white/80 text-sm leading-relaxed max-w-xs">
               Soluções completas e vibrantes em comunicação visual para destacar sua marca, eventos e empresas com máxima qualidade.

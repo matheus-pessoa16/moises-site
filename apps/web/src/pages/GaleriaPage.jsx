@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
+import { useSearchParams } from 'react-router-dom'
 import Header from '@/components/Header.jsx'
 import Footer from '@/components/Footer.jsx'
 import AlbumCard from '@/components/AlbumCard.jsx'
@@ -10,7 +11,16 @@ import { categories, albums } from '@/data/albums'
 import { WhatsAppButton } from '@/components/WhatsAppLink.jsx'
 
 function GaleriaPage() {
-  const [selectedCategory, setSelectedCategory] = useState('all')
+  const [searchParams] = useSearchParams()
+  const urlCategory = searchParams.get('category')
+  const validCategory = categories.find((c) => c.id === urlCategory)?.id
+  const [selectedCategory, setSelectedCategory] = useState(validCategory || 'all')
+
+  useEffect(() => {
+    if (validCategory && validCategory !== selectedCategory) {
+      setSelectedCategory(validCategory)
+    }
+  }, [validCategory, selectedCategory])
   const [selectedAlbum, setSelectedAlbum] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 

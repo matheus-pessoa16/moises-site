@@ -17,6 +17,8 @@ export default function AlbumCard({ album, onClick, delay = 0 }) {
           src={album.cover}
           alt={album.title}
           className="w-full h-full object-contain"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </div>
       <div className="px-4 py-3">

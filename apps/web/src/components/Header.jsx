@@ -8,6 +8,7 @@ import { LOGO_URL } from '@/config/site';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const location = useLocation();
 
   const navLinks = [
@@ -26,12 +27,19 @@ function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src={LOGO_URL} 
-              alt="Moisés Nunes Comunicação Visual" 
-              className="h-12 w-auto object-contain"
-            />
+          <Link to="/" className="flex items-center min-w-[120px]">
+            {logoError ? (
+              <span className="text-white font-bold text-lg tracking-tight">Moisés Nunes</span>
+            ) : (
+              <img
+                src={LOGO_URL}
+                alt="Moisés Nunes Comunicação Visual"
+                className="h-12 w-auto object-contain"
+                crossOrigin="anonymous"
+                referrerPolicy="no-referrer"
+                onError={() => setLogoError(true)}
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}

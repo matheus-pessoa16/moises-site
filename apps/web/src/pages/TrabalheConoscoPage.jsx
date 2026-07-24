@@ -46,7 +46,7 @@ function TrabalheConoscoPage() {
         </section>
 
         {/* Form Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 pb-32 bg-background flex-1">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto">
               <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg">
