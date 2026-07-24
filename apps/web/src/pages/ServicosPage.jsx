@@ -6,6 +6,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { WhatsAppButton } from '@/components/WhatsAppLink.jsx';
 
 function ServicosPage() {
   const services = [
@@ -206,7 +207,7 @@ function ServicosPage() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-3xl mx-auto"
             >
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-[hsl(var(--navy))]" style={{ letterSpacing: '-0.02em' }}>
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{ letterSpacing: '-0.02em' }}>
                 Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))]">serviços</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed font-medium">
@@ -237,7 +238,7 @@ function ServicosPage() {
                     <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-[hsl(var(--section-accent))]/10 text-[hsl(var(--section-accent))] shadow-sm">
                       <service.icon className="w-10 h-10" />
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[hsl(var(--navy))]">{service.title}</h2>
+                    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">{service.title}</h2>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                       {service.description}
                     </p>
@@ -253,9 +254,13 @@ function ServicosPage() {
                         </div>
                       ))}
                     </div>
-                    <Button asChild size="lg" className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98] shadow-md">
-                      <Link to="/contato">Solicitar orçamento</Link>
-                    </Button>
+                    <WhatsAppButton
+                      message="Olá! Gostaria de solicitar um orçamento."
+                      size="lg"
+                      className="gradient-primary-secondary transition-all duration-300 active:scale-[0.98] shadow-md"
+                    >
+                      Solicitar orçamento
+                    </WhatsAppButton>
                   </div>
                   <div className={index % 2 === 1 ? 'md:order-1' : ''}>
                     <div className="rounded-3xl overflow-hidden shadow-2xl relative group">
@@ -290,9 +295,13 @@ function ServicosPage() {
               <p className="text-xl mb-10 text-white/90 leading-relaxed font-medium">
                 Nossa equipe está pronta para atender suas necessidades e criar a solução perfeita, com as cores e o impacto que sua marca exige.
               </p>
-              <Button asChild size="lg" className="bg-white text-[hsl(var(--destructive))] hover:bg-white/90 h-14 px-10 text-lg shadow-xl transition-all duration-300 active:scale-[0.98]">
-                <Link to="/contato">Entre em contato agora</Link>
-              </Button>
+              <WhatsAppButton
+                message="Olá! Preciso de um orçamento personalizado."
+                size="lg"
+                className="bg-white text-[hsl(var(--destructive))] hover:bg-white/90 h-14 px-10 text-lg shadow-xl transition-all duration-300 active:scale-[0.98]"
+              >
+                Entre em contato agora
+              </WhatsAppButton>
             </motion.div>
           </div>
         </section>
