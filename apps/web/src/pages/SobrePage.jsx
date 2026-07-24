@@ -50,10 +50,10 @@ function SobrePage() {
           }} transition={{
             duration: 0.5
           }} className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-[hsl(var(--navy))]" style={{
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{
               letterSpacing: '-0.02em'
             }}>
-                Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--success))] to-[hsl(var(--primary))]">história</span>
+                Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))]">história</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed font-medium">
                 Transformando a paisagem visual de eventos e empresas com paixão, cor e precisão técnica.
@@ -80,10 +80,10 @@ function SobrePage() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] font-bold text-sm mb-6">
                   Tradição & Inovação
                 </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[hsl(var(--navy))]">Moldando a comunicação visual</h2>
-                <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">Moldando a comunicação visual</h2>
+                <div className="space-y-6 text-[hsl(var(--muted-foreground))] leading-relaxed text-lg">
                   <p>
-                    Somos <strong className="text-[hsl(var(--navy))]">Moisés Nunes Comunicação Visual,</strong> há mais de 13 anos no mercado atuando na área de impressão, oferecendo aos nossos clientes as melhores soluções em impressão de alta qualidade e rapidez na entrega. Nossa finalidade é sempre prestar serviços de qualidade com competência e pontualidade.
+                    Somos <strong className="text-white">Moisés Nunes Comunicação Visual,</strong> há mais de 13 anos no mercado atuando na área de impressão, oferecendo aos nossos clientes as melhores soluções em impressão de alta qualidade e rapidez na entrega. Nossa finalidade é sempre prestar serviços de qualidade com competência e pontualidade.
                   </p>
                   <p>
                   Nossa empresa é dividida em setores de atendimento, gráfica rápida, fardamentos, produção de materiais gráficos e fachadas.
@@ -127,8 +127,8 @@ function SobrePage() {
           }} transition={{
             duration: 0.5
           }} className="text-center mb-20">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-[hsl(var(--navy))]">O que nos move</h2>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] mx-auto rounded-full"></div>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white">O que nos move</h2>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))] mx-auto rounded-full"></div>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -149,7 +149,7 @@ function SobrePage() {
                   <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[hsl(var(--val-color))]/10 text-[hsl(var(--val-color))] group-hover:bg-[hsl(var(--val-color))] group-hover:text-white transition-colors duration-300">
                     <value.icon className="w-8 h-8" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-[hsl(var(--navy))]">{value.title}</h3>
+                  <h3 className="text-xl font-bold mb-4 text-white">{value.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {value.description}
                   </p>
@@ -161,16 +161,16 @@ function SobrePage() {
         {/* CTA Banner */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-[hsl(var(--navy))] rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy))] via-[hsl(var(--primary))] to-[hsl(var(--navy))] opacity-80 z-0"></div>
+            <div className="bg-[hsl(var(--card))] rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl border border-border">
+              <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--secondary))]/20 via-transparent to-[hsl(var(--accent))]/20 z-0"></div>
               <div className="relative z-10 max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">
                   Faça parte da nossa história
                 </h2>
-                <p className="text-xl text-white/90 mb-10">
+                <p className="text-xl text-[hsl(var(--muted-foreground))] mb-10">
                   Estamos prontos para assumir o desafio do seu próximo projeto visual.
                 </p>
-                <Button asChild size="lg" className="gradient-accent text-lg h-14 px-10 rounded-full shadow-[0_0_20px_hsl(var(--accent))/40] hover:shadow-[0_0_30px_hsl(var(--accent))/60] transition-all duration-300">
+                <Button asChild size="lg" className="gradient-primary-secondary text-lg h-14 px-10 rounded-full shadow-[0_0_20px_hsl(var(--accent))/40] hover:shadow-[0_0_30px_hsl(var(--accent))/60] transition-all duration-300">
                   <Link to="/contato">Iniciar projeto agora</Link>
                 </Button>
               </div>

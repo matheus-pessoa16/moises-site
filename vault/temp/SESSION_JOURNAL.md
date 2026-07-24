@@ -2333,3 +2333,146 @@
 - url: http://localhost:3000/
 - title: Moisés Nunes Comunicação Visual
 
+## 2026-07-24 22:08:23.732Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-24 22:08:24.351Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Serviços"}
+
+## 2026-07-24 22:08:24.352Z navigate
+- url: http://localhost:3001/servicos
+- via: pushState
+
+## 2026-07-24 22:08:34.971Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Galeria"}
+
+## 2026-07-24 22:08:34.971Z navigate
+- url: http://localhost:3001/galeria
+- via: pushState
+
+## 2026-07-24 22:08:38.653Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-07-24 22:08:38.664Z console.warn
+- text: Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+
+## 2026-07-24 22:08:40.991Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-24 22:08:41.810Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-24 22:08:42.935Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-24 22:08:44.152Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-07-24 22:08:48.523Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Sobre"}
+
+## 2026-07-24 22:08:48.524Z navigate
+- url: http://localhost:3001/sobre
+- via: pushState
+
+## 2026-07-24 22:08:56.381Z click
+- element: {"tag":"section","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Tradição & InovaçãoMoldando a comunicação visualSomos Moisés Nunes Comunicação Visual, há mais de 13 anos no mercado atuando na área de impressão, oferecendo aos nossos clientes as melhores soluções em impressão de alta qualidade e rapidez na entrega. Nossa finalidade é sempre prestar serviços de qualidade com competência e pontualidade.Nossa empresa é dividida em setores de atendimento, gráfica rápida, fardamentos, produção de materiais gráficos e fachadas.Contamos com uma equipe de funcionários qualificados para o seu determinado setor. Equipamentos calibrados e softwares modernos, garantindo a qualidade dos seus materiais impressos."}
+
+## 2026-07-24 22:09:33.243Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Tradição & InovaçãoMoldando a comunicação visualSomos Moisés Nunes Comunicação Visual, há mais de 13 anos no mercado atuando na área de impressão, oferecendo aos nossos clientes as melhores soluções em impressão de alta qualidade e rapidez na entrega. Nossa finalidade é sempre prestar serviços de qualidade com competência e pontualidade.Nossa empresa é dividida em setores de atendimento, gráfica rápida, fardamentos, produção de materiais gráficos e fachadas.Contamos com uma equipe de funcionários qualificados para o seu determinado setor. Equipamentos calibrados e softwares modernos, garantindo a qualidade dos seus materiais impressos."}
+
+## 2026-07-24 22:09:33.595Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Somos Moisés Nunes Comunicação Visual, há mais de 13 anos no mercado atuando na área de impressão, oferecendo aos nossos clientes as melhores soluções em impressão de alta qualidade e rapidez na entrega. Nossa finalidade é sempre prestar serviços de qualidade com competência e pontualidade."}
+
+## 2026-07-24 22:12:16.406Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:16.956Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:17.528Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:18.540Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:19.610Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:20.562Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:21.600Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:22.580Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:23.892Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:24.495Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:25.003Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:25.568Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:26.065Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:26.534Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:27.080Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:27.684Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:28.681Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:29.688Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:30.681Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:31.820Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:32.337Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:39.595Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 22:12:39.817Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
