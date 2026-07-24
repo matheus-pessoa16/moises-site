@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('@T9 AlbumModal opens with correct album media', async ({ page }) => {
-  await page.goto('/galeria')
+  await page.goto('/galeria', { waitUntil: 'domcontentloaded' })
   const card = page.locator('.album-card').first()
   await card.click()
   const modal = page.locator('[role="dialog"]')
@@ -12,7 +12,7 @@ test('@T9 AlbumModal opens with correct album media', async ({ page }) => {
 })
 
 test('@T9 AlbumModal carousel has next/prev controls for multi-item albums', async ({ page }) => {
-  await page.goto('/galeria')
+  await page.goto('/galeria', { waitUntil: 'domcontentloaded' })
   const cards = page.locator('.album-card')
   const firstCard = cards.first()
   await firstCard.click()
@@ -27,7 +27,7 @@ test('@T9 AlbumModal carousel has next/prev controls for multi-item albums', asy
 })
 
 test('@T9 AlbumModal renders Google Drive video iframe', async ({ page }) => {
-  await page.goto('/galeria')
+  await page.goto('/galeria', { waitUntil: 'domcontentloaded' })
   const finecapCard = page.locator('.album-card').filter({ hasText: 'Finecap' }).first()
   await finecapCard.click()
   const modal = page.locator('[role="dialog"]')
@@ -38,7 +38,7 @@ test('@T9 AlbumModal renders Google Drive video iframe', async ({ page }) => {
 })
 
 test('@T9 AlbumModal video has fallback link to Drive', async ({ page }) => {
-  await page.goto('/galeria')
+  await page.goto('/galeria', { waitUntil: 'domcontentloaded' })
   const finecapCard = page.locator('.album-card').filter({ hasText: 'Finecap' }).first()
   await finecapCard.click()
   const modal = page.locator('[role="dialog"]')

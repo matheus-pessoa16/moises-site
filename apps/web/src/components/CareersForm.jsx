@@ -71,7 +71,7 @@ export default function CareersForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" data-testid="careers-form">
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6" data-testid="careers-form">
       <div>
         <Label htmlFor="careers-name" className="text-sm font-semibold mb-2 block text-white">
           Nome completo

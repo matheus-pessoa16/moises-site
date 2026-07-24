@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('@T11 CareersForm renders all required fields', async ({ page }) => {
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await expect(page.locator('#careers-name')).toBeVisible()
   await expect(page.locator('#careers-email')).toBeVisible()
   await expect(page.locator('#careers-phone')).toBeVisible()
@@ -10,7 +10,7 @@ test('@T11 CareersForm renders all required fields', async ({ page }) => {
 })
 
 test('@T11 CareersForm shows validation errors for missing fields', async ({ page }) => {
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await page.locator('[data-testid="submit-careers"]').click()
   await expect(page.locator('[data-testid="error-name"]')).toBeVisible()
   await expect(page.locator('[data-testid="error-email"]')).toBeVisible()
@@ -19,14 +19,18 @@ test('@T11 CareersForm shows validation errors for missing fields', async ({ pag
 })
 
 test('@T11 CareersForm shows error for invalid email', async ({ page }) => {
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
+  await page.locator('#careers-name').fill('Test User')
   await page.locator('#careers-email').fill('not-an-email')
+  await page.locator('#careers-phone').fill('(84) 99999-9999')
+  await page.locator('#careers-message').fill('Test message')
   await page.locator('[data-testid="submit-careers"]').click()
+  await expect(page.locator('[data-testid="error-email"]')).toBeVisible({ timeout: 10000 })
   await expect(page.locator('[data-testid="error-email"]')).toHaveText('E-mail inválido')
 })
 
 test('@T11 CareersForm prevents submission without file', async ({ page }) => {
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await page.locator('#careers-name').fill('Test User')
   await page.locator('#careers-email').fill('test@example.com')
   await page.locator('#careers-phone').fill('(84) 99999-9999')
@@ -40,7 +44,7 @@ test('@T11 CareersForm submits successfully with valid data', async ({ page }) =
   await page.route('**/webhook/moisesNunesAnalise', (route) => {
     route.fulfill({ status: 200, body: '{"success":true}' })
   })
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await page.locator('#careers-name').fill('Test User')
   await page.locator('#careers-email').fill('test@example.com')
   await page.locator('#careers-phone').fill('(84) 99999-9999')
@@ -58,7 +62,7 @@ test('@T11 CareersForm shows error on webhook failure and preserves fields', asy
   await page.route('**/webhook/moisesNunesAnalise', (route) => {
     route.fulfill({ status: 500, body: '{"error":"server error"}' })
   })
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await page.locator('#careers-name').fill('Test User')
   await page.locator('#careers-email').fill('test@example.com')
   await page.locator('#careers-phone').fill('(84) 99999-9999')
@@ -78,7 +82,7 @@ test('@T11 CareersForm does not expose webhook details in error', async ({ page 
   await page.route('**/webhook/moisesNunesAnalise', (route) => {
     route.fulfill({ status: 500, body: '{"error":"internal n8n details"}' })
   })
-  await page.goto('/trabalhe-conosco')
+  await page.goto('/trabalhe-conosco', { waitUntil: 'domcontentloaded' })
   await page.locator('#careers-name').fill('Test User')
   await page.locator('#careers-email').fill('test@example.com')
   await page.locator('#careers-phone').fill('(84) 99999-9999')
