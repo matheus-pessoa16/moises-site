@@ -13,7 +13,7 @@ export const LOGO_URL =
 export const N8N_WEBHOOK_URL =
   'https://n8n.devsr.com.br/webhook/moisesNunesAnalise'
 
-export const SHOW_CAMPAIGN_BANNER = true
+export const SHOW_CAMPAIGN_BANNER = false
 
 export const CAMPAIGN_SVG_URL =
   'https://lh3.googleusercontent.com/d/1UePH9sYu6RP88jlK6XFMjurKBIBbVqDs=w1000?authuser=0'

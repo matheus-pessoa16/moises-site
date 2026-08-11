@@ -23,7 +23,7 @@ function Header() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -48,13 +48,16 @@ function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-semibold transition-colors duration-200 hover:text-primary ${
-                  isActive(link.path) 
-                    ? 'text-primary border-b-2 border-primary pb-1' 
+                className={`relative text-sm font-semibold transition-colors duration-200 hover:text-[hsl(var(--secondary))] ${
+                  isActive(link.path)
+                    ? 'text-[hsl(var(--secondary))]'
                     : 'text-foreground'
                 }`}
               >
                 {link.label}
+                {isActive(link.path) && (
+                  <span className="absolute -bottom-1.5 left-0 right-0 h-0.5 rounded-full bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(199_90%_48%)]" />
+                )}
               </Link>
             ))}
           </nav>
@@ -84,8 +87,8 @@ function Header() {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`text-lg font-semibold transition-colors duration-200 hover:text-primary py-2 ${
-                      isActive(link.path) ? 'text-primary' : 'text-foreground'
+                    className={`text-lg font-semibold transition-colors duration-200 hover:text-[hsl(var(--secondary))] py-2 ${
+                      isActive(link.path) ? 'text-[hsl(var(--secondary))]' : 'text-foreground'
                     }`}
                   >
                     {link.label}

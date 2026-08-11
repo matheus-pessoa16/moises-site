@@ -6,7 +6,8 @@ import { LOGO_URL, INSTAGRAM_URL, WHATSAPP_URL } from '@/config/site';
 function Footer() {
   const [logoError, setLogoError] = useState(false)
   return (
-    <footer className="bg-[hsl(var(--navy))] text-white border-t border-white/10">
+    <footer className="bg-[hsl(var(--navy))] text-white">
+      <div className="h-[2px] hairline-gradient"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -32,7 +33,7 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <span className="font-bold text-white block mb-6 uppercase tracking-wider text-sm">Navegação</span>
+            <span className="font-bold font-display text-white block mb-6 uppercase tracking-wider text-sm">Navegação</span>
             <nav className="flex flex-col gap-3">
               <Link to="/" className="text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
                 Home
@@ -63,7 +64,7 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <span className="font-bold text-white block mb-6 uppercase tracking-wider text-sm">Contato</span>
+            <span className="font-bold font-display text-white block mb-6 uppercase tracking-wider text-sm">Contato</span>
             <div className="flex flex-col gap-4">
               <a href="https://web.whatsapp.com/send?phone=5584921768017" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-white/80 hover:text-[hsl(var(--secondary))] transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
@@ -88,7 +89,7 @@ function Footer() {
 
           {/* Social & Hours */}
           <div>
-            <span className="font-bold text-white block mb-6 uppercase tracking-wider text-sm">Redes sociais</span>
+            <span className="font-bold font-display text-white block mb-6 uppercase tracking-wider text-sm">Redes sociais</span>
             <div className="flex gap-3 mb-8">
               <a 
                 href={INSTAGRAM_URL} 

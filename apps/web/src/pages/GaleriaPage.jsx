@@ -8,7 +8,8 @@ import AlbumCard from '@/components/AlbumCard.jsx'
 import AlbumModal from '@/components/AlbumModal.jsx'
 import { Button } from '@/components/ui/button'
 import { categories, albums } from '@/data/albums'
-import { WhatsAppButton } from '@/components/WhatsAppLink.jsx'
+import PageHero from '@/components/PageHero.jsx'
+import CtaSection from '@/components/CtaSection.jsx'
 
 function GaleriaPage() {
   const [searchParams] = useSearchParams()
@@ -53,30 +54,11 @@ function GaleriaPage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="py-24 bg-muted relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[hsl(var(--accent))]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center max-w-3xl mx-auto"
-            >
-              <h1
-                className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white"
-                style={{ letterSpacing: '-0.02em' }}
-              >
-                Nossa{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))]">
-                  galeria
-                </span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                Explore a energia e a qualidade dos nossos projetos de comunicação visual.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <PageHero
+          title="Nossa"
+          highlight="galeria"
+          subtitle="Explore a energia e a qualidade dos nossos projetos de comunicação visual."
+        />
 
         {/* Filter Section */}
         <section className="py-10 border-b relative z-20 bg-background/80 backdrop-blur-sm sticky top-20">
@@ -89,8 +71,8 @@ function GaleriaPage() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`transition-all duration-300 active:scale-[0.98] rounded-full px-6 ${
                     selectedCategory === category.id
-                      ? 'gradient-primary-secondary border-none shadow-md'
-                      : 'hover:border-[hsl(var(--primary))] hover:text-[hsl(var(--primary))]'
+                      ? 'gradient-primary-secondary text-white border-none'
+                      : 'bg-white/5 text-white/70 border border-white/10 hover:bg-white/10 hover:text-white'
                   }`}
                 >
                   {category.label}
@@ -139,19 +121,11 @@ function GaleriaPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-[hsl(var(--navy))] text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy))] to-[hsl(var(--primary))/80] z-0"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h2 className="text-3xl font-bold mb-6">Inspirado pelos nossos projetos?</h2>
-            <WhatsAppButton
-              message="Olá! Vi a galeria e gostaria de criar um projeto."
-              size="lg"
-              className="gradient-accent border-none shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Vamos criar o seu projeto
-            </WhatsAppButton>
-          </div>
-        </section>
+        <CtaSection
+          title="Inspirado pelos nossos projetos?"
+          ctaLabel="Vamos criar o seu projeto"
+          ctaMessage="Olá! Vi a galeria e gostaria de criar um projeto."
+        />
 
         <Footer />
       </div>

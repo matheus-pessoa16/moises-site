@@ -2631,3 +2631,959 @@
 - url: http://localhost:3000/
 - title: Moisés Nunes Comunicação Visual
 
+## 2026-07-24 22:24:26.704Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contato"}
+
+## 2026-07-24 22:24:26.706Z navigate
+- url: http://localhost:3001/contato
+- via: pushState
+
+## 2026-07-24 22:24:33.844Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-24 22:24:34.688Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-24 22:24:34.689Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-24 22:24:38.245Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-24 22:24:38.899Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-07-24 22:24:38.900Z navigate
+- url: http://localhost:3001/
+- via: pushState
+
+## 2026-07-24 22:24:44.659Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-07-24 23:02:19.368Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 23:02:19.584Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-24 23:02:22.154Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 23:02:22.337Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-24 23:02:25.130Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 23:02:25.344Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-24 23:18:24.814Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-24 23:18:25.041Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:31:09.562Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:10.118Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:10.664Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:10.886Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:31:12.243Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:12.481Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:31:13.838Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:14.072Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:31:15.374Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:15.568Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:31:16.921Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:17.184Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:31:18.515Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:18.969Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:19.506Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:20.079Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:20.545Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:21.035Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:21.563Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:22.111Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:22.660Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:22.890Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:31:23.006Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 00:31:23.019Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 00:31:23.020Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 00:31:23.020Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 00:31:23.031Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 00:31:23.031Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 00:31:23.032Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 00:31:23.041Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 00:31:23.041Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 00:31:23.043Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":"message","type":null,"id":"careers-message","placeholder":"Conte sobre você e sua experiência...","label":"message","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 00:31:24.667Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:25.679Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:26.706Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:31:27.131Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:25.672Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:25.899Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:33:30.397Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:30.484Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:33:35.758Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:35.809Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:33:39.563Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:39.629Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:33:43.776Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:43.832Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:33:45.841Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:45.909Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:33:47.929Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:48.122Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:33:51.649Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:51.712Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:33:57.086Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:33:57.155Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:34:00.920Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:34:00.977Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:34:04.063Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:34:04.116Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:34:06.471Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:34:06.532Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:38:40.672Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:38:40.897Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:38:46.352Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:38:46.420Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:38:57.719Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:38:57.789Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:39:03.317Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:03.380Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:39:08.076Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:08.138Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:39:11.725Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:11.784Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:39:15.397Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:15.603Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:39:21.585Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:21.647Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:39:35.546Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:35.606Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:39:43.430Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:43.480Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:39:52.115Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:52.168Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:39:56.921Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:39:56.990Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:41:23.187Z load
+- url: http://localhost:3001/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:41:23.540Z navigate
+- url: http://localhost:3001/
+- via: replaceState
+
+## 2026-07-25 00:41:40.789Z load
+- url: http://localhost:3001/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:41:45.113Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Serviços"}
+
+## 2026-07-25 00:41:45.115Z navigate
+- url: http://localhost:3001/servicos
+- via: pushState
+
+## 2026-07-25 00:42:03.003Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Galeria"}
+
+## 2026-07-25 00:42:03.004Z navigate
+- url: http://localhost:3001/galeria
+- via: pushState
+
+## 2026-07-25 00:42:06.190Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-07-25 00:42:06.219Z console.warn
+- text: Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+
+## 2026-07-25 00:42:08.343Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 00:42:09.225Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 00:42:10.968Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 00:42:12.208Z click
+- element: {"tag":"div","role":"dialog","ariaLabel":null,"name":null,"type":null,"id":"radix-:r9:","placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Impressão 3DPrevious slideNext slideClose"}
+
+## 2026-07-25 00:42:12.917Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-07-25 00:42:23.653Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Sobre"}
+
+## 2026-07-25 00:42:23.654Z navigate
+- url: http://localhost:3001/sobre
+- via: pushState
+
+## 2026-07-25 00:42:29.113Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contato"}
+
+## 2026-07-25 00:42:29.115Z navigate
+- url: http://localhost:3001/contato
+- via: pushState
+
+## 2026-07-25 00:42:39.608Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-25 00:42:39.609Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-25 00:43:00.226Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:00.426Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:43:05.812Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:05.881Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:43:16.417Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:16.494Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:43:22.469Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:22.523Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:43:27.557Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:27.639Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:43:31.488Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:31.561Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:43:35.398Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:35.637Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:43:41.930Z load
+- url: http://localhost:3000/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:41.988Z navigate
+- url: http://localhost:3000/servicos
+- via: replaceState
+
+## 2026-07-25 00:43:55.862Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:43:55.922Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 00:44:03.916Z load
+- url: http://localhost:3000/sobre
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:44:03.977Z navigate
+- url: http://localhost:3000/sobre
+- via: replaceState
+
+## 2026-07-25 00:44:10.410Z load
+- url: http://localhost:3000/contato
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:44:10.472Z navigate
+- url: http://localhost:3000/contato
+- via: replaceState
+
+## 2026-07-25 00:44:15.412Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:44:15.475Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 00:58:13.432Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:58:13.628Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:58:16.696Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 00:58:16.885Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 00:58:44.867Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-25 00:58:45.557Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-25 00:58:46.480Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-07-25 00:58:46.481Z navigate
+- url: http://localhost:3001/
+- via: pushState
+
+## 2026-07-25 00:59:00.552Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: popstate
+
+## 2026-07-25 00:59:01.530Z navigate
+- url: http://localhost:3001/
+- via: popstate
+
+## 2026-07-25 00:59:04.879Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Conheça nossos serviços"}
+
+## 2026-07-25 00:59:04.880Z navigate
+- url: http://localhost:3001/servicos
+- via: pushState
+
+## 2026-07-25 00:59:14.828Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Solicitar orçamento"}
+
+## 2026-07-25 01:00:21.508Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:22.422Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:23.445Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:23.758Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 01:00:25.341Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:25.634Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 01:00:27.230Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:27.575Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 01:00:29.341Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:29.698Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 01:00:31.340Z load
+- url: http://localhost:3000/galeria
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:31.665Z navigate
+- url: http://localhost:3000/galeria
+- via: replaceState
+
+## 2026-07-25 01:00:33.255Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:33.919Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:34.640Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:35.555Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:36.361Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:37.248Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:38.010Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:39.239Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:40.550Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:41.920Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:42.295Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 01:00:42.499Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:42.523Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 01:00:42.523Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 01:00:42.525Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:42.539Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 01:00:42.539Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 01:00:42.540Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:42.553Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 01:00:42.553Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 01:00:42.554Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":"message","type":null,"id":"careers-message","placeholder":"Conte sobre você e sua experiência...","label":"message","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:44.267Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:44.581Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 01:00:44.747Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:44.787Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 01:00:44.788Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"name","type":"text","id":"careers-name","placeholder":"Seu nome","label":"name","value":"Test User","valueLength":9,"text":""}
+
+## 2026-07-25 01:00:44.789Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:44.828Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 01:00:44.829Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"email","type":"email","id":"careers-email","placeholder":"seu@email.com","label":"email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-07-25 01:00:44.830Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:44.862Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 01:00:44.862Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"(84) 99999-9999","valueLength":15,"text":""}
+
+## 2026-07-25 01:00:44.864Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":"message","type":null,"id":"careers-message","placeholder":"Conte sobre você e sua experiência...","label":"message","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:00:46.773Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:00:47.464Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:01:53.794Z load
+- url: http://localhost:3000/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:01:54.113Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-07-25 01:03:01.917Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Precisa de um orçamento personalizado?Nossa equipe está pronta para atender suas necessidades e criar a solução perfeita, com as cores e o impacto que sua marca exige.Entre em contato agora"}
+
+## 2026-07-25 01:03:02.845Z load
+- url: http://localhost:3001/servicos
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:03:07.204Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-25 01:03:07.206Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-25 01:03:11.824Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:03:12.003Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":"phone","type":"tel","id":"careers-phone","placeholder":"(00) 00000-0000","label":"phone","value":"","valueLength":0,"text":""}
+
+## 2026-07-25 01:03:13.340Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contato"}
+
+## 2026-07-25 01:03:13.341Z navigate
+- url: http://localhost:3001/contato
+- via: pushState
+
+## 2026-07-25 01:03:16.204Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-25 01:03:16.205Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-25 01:06:08.177Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:06:08.470Z navigate
+- url: http://localhost:3000/trabalhe-conosco
+- via: replaceState
+
+## 2026-07-25 01:07:31.026Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:31.862Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:32.570Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:33.690Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:34.411Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:35.557Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:07:36.679Z load
+- url: http://localhost:3000/trabalhe-conosco
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 01:08:07.870Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-07-25 01:08:07.871Z navigate
+- url: http://localhost:3001/
+- via: pushState
+
+## 2026-07-25 01:08:13.417Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeServiçosGaleriaSobreContatoTrabalhe ConoscoSolicitar orçamento"}
+
+## 2026-07-25 01:08:16.540Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Serviços"}
+
+## 2026-07-25 01:08:16.542Z navigate
+- url: http://localhost:3001/servicos
+- via: pushState
+
+## 2026-07-25 01:08:27.356Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Galeria"}
+
+## 2026-07-25 01:08:27.357Z navigate
+- url: http://localhost:3001/galeria
+- via: pushState
+
+## 2026-07-25 01:09:04.368Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-07-25 01:09:04.369Z navigate
+- url: http://localhost:3001/
+- via: pushState
+
+## 2026-07-25 01:09:09.352Z load
+- url: http://localhost:3001/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 13:53:46.878Z load
+- url: http://localhost:3001/
+- title: Moisés Nunes Comunicação Visual
+
+## 2026-07-25 13:54:44.703Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Serviços"}
+
+## 2026-07-25 13:54:44.704Z navigate
+- url: http://localhost:3001/servicos
+- via: pushState
+
+## 2026-07-25 13:54:53.258Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver na galeria"}
+
+## 2026-07-25 13:54:53.259Z navigate
+- url: http://localhost:3001/galeria?category=impressao
+- via: pushState
+
+## 2026-07-25 13:54:57.651Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-07-25 13:54:57.677Z console.warn
+- text: Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+
+## 2026-07-25 13:54:59.658Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 13:54:59.742Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 13:55:00.723Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 13:55:01.602Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Next slide"}
+
+## 2026-07-25 13:55:03.530Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-07-25 13:55:12.403Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"(84) 92176-8017"}
+
+## 2026-07-25 13:55:23.200Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Instagram","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-07-25 13:55:29.716Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Sobre"}
+
+## 2026-07-25 13:55:29.716Z navigate
+- url: http://localhost:3001/sobre
+- via: pushState
+
+## 2026-07-25 13:55:40.758Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contato"}
+
+## 2026-07-25 13:55:40.759Z navigate
+- url: http://localhost:3001/contato
+- via: pushState
+
+## 2026-07-25 13:55:50.019Z click
+- element: {"tag":"html","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"\n\t\timport { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () => {};\nwindow.$RefreshSig$ = () => (type) => type;\n\n\t\t\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tContato - Moisés Nunes Comunicação Visual\n\t\tconst SITE_PAGES_ENDPOINT = '/__horizons/site-pages';\n\nconst OUTGOING_SITE_PAGES_MESSAGE = 'sitePages';\nconst INCOMING_REQUEST_SITE_PAGES_MESSAGE = 'request-site-pages';\n\nconst ALLOWED_PARENT_ORIGINS = [\n\t'https://horizons.hostinger.com',\n\t'https://horizons.hostinger.dev',\n\t'https://horizons-frontend-local.hostinger.dev',\n\t'http://localhost:4000',\n];\n\nfunction postSitePages(pages) {\n\tlet parentOrigin = window.location.ancestorOrigins?.[0];\n\tif (!parentOrigin && document.referrer) {\n\t\ttry {\n\t\t\tparentOrigin = new URL(document.referrer).origin;\n\t\t} catch {}\n\t}\n\tif (parentOrigin && ALLOWED_PARENT_ORIGINS.includes(parentOrigin)) {\n\t\twindow.parent.postMessage({ type: OUTGOING_SITE_PAGES_MESSAGE, payload: { pages } }, parentOrigin);\n\t}\n}\n\nasync function sendSitePagesToParent() {\n\tif (window.self === window.top) {\n\t\treturn;\n\t}\n\n\ttry {\n\t\tconst response = await fetch(SITE_PAGES_ENDPOINT);\n\t\tif (!response.ok) {\n\t\t\tthrow new Error(`HTTP ${response.status}`);\n\t\t}\n\t\tpostSitePages(await response.json());\n\t} catch (error) {\n\t\tconsole.error('[site-pages] Failed to send site pages to parent:', error);\n\t}\n}\n\nif (window.self !== window.top) {\n\twindow.addEventListener('load', sendSitePagesToParent);\n\twindow.addEventListener('message', (event) => {\n\t\tif (event.data?.type === INCOMING_REQUEST_SITE_PAGES_MESSAGE) {\n\t\t\tsendSitePagesToParent();\n\t\t}\n\t});\n}\n\n\t\t\n\t#root[data-edit-mode-enabled=\"true\"] {\n\t\tcursor: pointer;\n\t}\n\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id] {\n\t\tcursor: pointer;\n\t\toutline: 2px dashed #357DF9;\n\t\toutline-offset: 2px;\n\t\tmin-height: 1em;\n\t\toverflow-wrap: anywhere;\n\t\tmin-width: 0;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] img[data-edit-id] {\n\t\toutline-offset: -2px;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id]:hover {\n\t\tbackground-c..."}
+
+## 2026-07-25 13:55:52.701Z click
+- element: {"tag":"html","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"\n\t\timport { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () => {};\nwindow.$RefreshSig$ = () => (type) => type;\n\n\t\t\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tContato - Moisés Nunes Comunicação Visual\n\t\tconst SITE_PAGES_ENDPOINT = '/__horizons/site-pages';\n\nconst OUTGOING_SITE_PAGES_MESSAGE = 'sitePages';\nconst INCOMING_REQUEST_SITE_PAGES_MESSAGE = 'request-site-pages';\n\nconst ALLOWED_PARENT_ORIGINS = [\n\t'https://horizons.hostinger.com',\n\t'https://horizons.hostinger.dev',\n\t'https://horizons-frontend-local.hostinger.dev',\n\t'http://localhost:4000',\n];\n\nfunction postSitePages(pages) {\n\tlet parentOrigin = window.location.ancestorOrigins?.[0];\n\tif (!parentOrigin && document.referrer) {\n\t\ttry {\n\t\t\tparentOrigin = new URL(document.referrer).origin;\n\t\t} catch {}\n\t}\n\tif (parentOrigin && ALLOWED_PARENT_ORIGINS.includes(parentOrigin)) {\n\t\twindow.parent.postMessage({ type: OUTGOING_SITE_PAGES_MESSAGE, payload: { pages } }, parentOrigin);\n\t}\n}\n\nasync function sendSitePagesToParent() {\n\tif (window.self === window.top) {\n\t\treturn;\n\t}\n\n\ttry {\n\t\tconst response = await fetch(SITE_PAGES_ENDPOINT);\n\t\tif (!response.ok) {\n\t\t\tthrow new Error(`HTTP ${response.status}`);\n\t\t}\n\t\tpostSitePages(await response.json());\n\t} catch (error) {\n\t\tconsole.error('[site-pages] Failed to send site pages to parent:', error);\n\t}\n}\n\nif (window.self !== window.top) {\n\twindow.addEventListener('load', sendSitePagesToParent);\n\twindow.addEventListener('message', (event) => {\n\t\tif (event.data?.type === INCOMING_REQUEST_SITE_PAGES_MESSAGE) {\n\t\t\tsendSitePagesToParent();\n\t\t}\n\t});\n}\n\n\t\t\n\t#root[data-edit-mode-enabled=\"true\"] {\n\t\tcursor: pointer;\n\t}\n\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id] {\n\t\tcursor: pointer;\n\t\toutline: 2px dashed #357DF9;\n\t\toutline-offset: 2px;\n\t\tmin-height: 1em;\n\t\toverflow-wrap: anywhere;\n\t\tmin-width: 0;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] img[data-edit-id] {\n\t\toutline-offset: -2px;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id]:hover {\n\t\tbackground-c..."}
+
+## 2026-07-25 13:55:54.656Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Trabalhe Conosco"}
+
+## 2026-07-25 13:55:54.657Z navigate
+- url: http://localhost:3001/trabalhe-conosco
+- via: pushState
+
+## 2026-07-25 14:08:20.251Z load
+- url: http://localhost:3001/
+- title: Moisés Nunes Comunicação Visual
+

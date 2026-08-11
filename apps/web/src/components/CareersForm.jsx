@@ -80,7 +80,7 @@ export default function CareersForm() {
           id="careers-name"
           type="text"
           placeholder="Seu nome"
-          className="text-foreground placeholder:text-muted-foreground"
+          className="h-12 px-4 text-base text-foreground placeholder:text-muted-foreground"
           {...register('name', { required: 'Nome é obrigatório' })}
         />
         {errors.name && (
@@ -96,7 +96,7 @@ export default function CareersForm() {
           id="careers-email"
           type="email"
           placeholder="seu@email.com"
-          className="text-foreground placeholder:text-muted-foreground"
+          className="h-12 px-4 text-base text-foreground placeholder:text-muted-foreground"
           {...register('email', {
             required: 'E-mail é obrigatório',
             pattern: {
@@ -118,7 +118,7 @@ export default function CareersForm() {
           id="careers-phone"
           type="tel"
           placeholder="(00) 00000-0000"
-          className="text-foreground placeholder:text-muted-foreground"
+          className="h-12 px-4 text-base text-foreground placeholder:text-muted-foreground"
           {...register('phone', { required: 'Telefone é obrigatório' })}
         />
         {errors.phone && (
@@ -134,7 +134,7 @@ export default function CareersForm() {
           id="careers-message"
           placeholder="Conte sobre você e sua experiência..."
           rows={5}
-          className="text-foreground placeholder:text-muted-foreground resize-none"
+          className="px-4 py-3 text-base text-foreground placeholder:text-muted-foreground resize-none"
           {...register('message', { required: 'Mensagem é obrigatória' })}
         />
         {errors.message && (
@@ -151,7 +151,7 @@ export default function CareersForm() {
           type="file"
           accept={RESUME_ALLOWED_EXTENSIONS.join(',')}
           ref={fileInputRef}
-          className="text-foreground file:mr-3 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-primary file:text-primary-foreground file:cursor-pointer"
+          className="h-12 px-4 py-2 text-foreground file:mr-3 file:py-1.5 file:px-4 file:rounded-md file:border-0 file:bg-primary file:text-primary-foreground file:cursor-pointer"
           data-testid="resume-input"
         />
         {fileError && (

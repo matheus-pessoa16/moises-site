@@ -15,7 +15,7 @@ export default function CampaignCards() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="campaign-card rounded-lg overflow-hidden bg-card border border-border"
+              className="campaign-card rounded-xl overflow-hidden bg-card border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[hsl(var(--secondary))]/10 hover:border-[hsl(var(--secondary))]/40"
             >
               <div className="aspect-video overflow-hidden bg-muted">
                 <img
@@ -27,7 +27,7 @@ export default function CampaignCards() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">{campaign.title}</h3>
+                <h3 className="text-xl font-bold font-display mb-2 text-white">{campaign.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{campaign.description}</p>
                 {campaign.ctaLink ? (
                   <Button asChild variant="outline" size="sm">

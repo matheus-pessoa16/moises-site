@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ContactForm from '@/components/ContactForm.jsx';
+import PageHero from '@/components/PageHero.jsx';
 
 function ContatoPage() {
   const contactInfo = [
@@ -27,7 +28,7 @@ function ContatoPage() {
       title: 'Endereço',
       content: 'Pau dos Ferros, RN',
       link: null,
-      color: '--warning'
+      color: '--primary'
     }, 
     {
       icon: Clock,
@@ -49,24 +50,11 @@ function ContatoPage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="py-24 bg-muted relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--warning))]/10 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }} 
-              animate={{ opacity: 1, y: 0 }} 
-              transition={{ duration: 0.5 }} 
-              className="text-center max-w-3xl mx-auto"
-            >
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{ letterSpacing: '-0.02em' }}>
-                Vamos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))]">conversar?</span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                Sua marca precisa de um upgrade visual? Preencha o formulário abaixo e receba um atendimento ágil e especializado.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <PageHero
+          title="Vamos"
+          highlight="conversar?"
+          subtitle="Sua marca precisa de um upgrade visual? Preencha o formulário abaixo e receba um atendimento ágil e especializado."
+        />
 
         {/* Contact Section */}
         <section className="py-24 bg-background">
@@ -121,8 +109,8 @@ function ContatoPage() {
                 </div>
 
                 {/* Additional Info / CTA */}
-                <div className="bg-[hsl(var(--navy))] rounded-3xl p-8 relative overflow-hidden shadow-xl">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[hsl(var(--primary))]/30 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                <div className="bg-card border border-white/10 rounded-3xl p-8 relative overflow-hidden shadow-xl">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[hsl(var(--secondary))]/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                   <h3 className="font-bold mb-4 text-white text-2xl">Atendimento Expresso</h3>
                   <p className="text-white/80 leading-relaxed text-lg">
                     Valorizamos o seu tempo. Respondemos todas as solicitações rapidamente. Para demandas urgentes, recomendamos o contato telefônico.

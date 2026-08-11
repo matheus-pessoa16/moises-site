@@ -8,6 +8,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import CampaignBanner from '@/components/CampaignBanner.jsx';
 import CampaignCards from '@/components/CampaignCards.jsx';
+import CtaSection from '@/components/CtaSection.jsx';
 import { WhatsAppButton } from '@/components/WhatsAppLink.jsx';
 function HomePage() {
   return <>
@@ -22,9 +23,10 @@ function HomePage() {
         {/* Hero Section */}
         <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[hsl(var(--navy))]">
           <div className="absolute inset-0 z-0">
-            <img src="https://horizons-cdn.hostinger.com/8cf04d40-a2cd-4e8d-966c-90768c888606/fachada-moises-DLQmZ.png" alt="Comunicação visual para eventos" className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
-            {/* Vibrant overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-[hsl(var(--navy))] via-[hsl(var(--navy))/80] to-[hsl(var(--primary))/40]"></div>
+            <img src="https://horizons-cdn.hostinger.com/8cf04d40-a2cd-4e8d-966c-90768c888606/fachada-moises-DLQmZ.png" alt="Comunicação visual para eventos" className="w-full h-full object-cover" />
+            {/* Legibility gradients — keep the facade visible on the right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#01154A] via-[#01154A]/75 to-[#01154A]/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#01154A] via-[#01154A]/50 to-transparent"></div>
           </div>
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -39,13 +41,13 @@ function HomePage() {
               duration: 0.7
             }}>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-6 text-sm font-medium">
-                  <span className="w-2 h-2 rounded-full bg-[hsl(var(--warning))] animate-pulse"></span>
+                  <span className="w-2 h-2 rounded-full bg-[hsl(var(--secondary))] animate-pulse"></span>
                   Especialistas em Comunicação Visual
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight" style={{
                 letterSpacing: '-0.02em'
               }}>
-                  Há mais de 13 anos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--primary))]">imprimindo a sua história</span>
+                  Há mais de 13 anos <span className="text-gradient-brand">imprimindo a sua história</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed max-w-2xl font-medium">
                   Soluções criativas e vibrantes em impressão, LED e personalização para destacar seu evento e negócio.
@@ -65,6 +67,13 @@ function HomePage() {
                     </Link>
                   </Button>
                 </div>
+                <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/60 font-medium">
+                  <span>13+ anos de mercado</span>
+                  <span className="w-1 h-1 rounded-full bg-[hsl(var(--secondary))]"></span>
+                  <span>Pau dos Ferros/RN</span>
+                  <span className="w-1 h-1 rounded-full bg-[hsl(var(--secondary))]"></span>
+                  <span>Resposta rápida no WhatsApp</span>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -77,40 +86,12 @@ function HomePage() {
         <CampaignCards />
 
         {/* CTA Section */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[hsl(var(--navy))] z-0"></div>
-          {/* Vibrant abstract background elements */}
-          <div className="absolute inset-0 opacity-30 z-0 bg-[radial-gradient(circle_at_bottom_left,_hsl(var(--accent)),_transparent_70%),_radial-gradient(circle_at_top_right,_hsl(var(--primary)),_transparent_70%)]"></div>
-          
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div initial={{
-            opacity: 0,
-            scale: 0.95
-          }} whileInView={{
-            opacity: 1,
-            scale: 1
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.5
-          }} className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto shadow-2xl">
-              <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white">
-                Pronto para destacar o seu negócio?
-              </h2>
-              <p className="text-xl mb-10 text-white/80 leading-relaxed max-w-2xl mx-auto">
-                Transforme o visual da sua marca com a nossa expertise. Solicite um orçamento sem compromisso e veja suas ideias ganharem vida.
-              </p>
-              <WhatsAppButton
-                message="Olá! Gostaria de falar sobre um projeto de comunicação visual."
-                size="lg"
-                className="gradient-warm h-14 px-10 text-lg shadow-[0_0_30px_hsl(var(--warning))/30] transition-all duration-300 active:scale-[0.98]"
-              >
-                Fale conosco agora
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </WhatsAppButton>
-            </motion.div>
-          </div>
-        </section>
+        <CtaSection
+          title="Pronto para destacar o seu negócio?"
+          subtitle="Transforme o visual da sua marca com a nossa expertise. Solicite um orçamento sem compromisso e veja suas ideias ganharem vida."
+          ctaLabel="Fale conosco agora"
+          ctaMessage="Olá! Gostaria de falar sobre um projeto de comunicação visual."
+        />
 
         <Footer />
       </div>

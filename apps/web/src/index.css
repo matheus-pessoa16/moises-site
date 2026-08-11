@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,12 +9,12 @@
     /* Base UI — Moisés Visual Identity */
     --background: 224 97% 15%; /* #01154A — Navy */
     --foreground: 192 85% 92%; /* #DAF5FC — Light Blue subtitles */
-    --card: 224 80% 20%; /* Slightly lighter navy */
+    --card: 223 70% 19%; /* Elevated navy surface */
     --card-foreground: 192 85% 92%;
-    --popover: 224 80% 20%;
+    --popover: 223 70% 19%;
     --popover-foreground: 192 85% 92%;
-    --border: 224 50% 30%; /* Subtle border on dark bg */
-    --input: 224 50% 30%;
+    --border: 223 45% 32%; /* Subtle border on dark bg */
+    --input: 223 45% 32%;
     --radius: 0.7rem;
 
     /* Accent Palette */
@@ -66,9 +66,18 @@
     font-variant-numeric: tabular-nums;
   }
 
+  ::selection {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--navy));
+  }
+
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     color: hsl(0 0% 100%); /* #FFFFFF — primary titles */
+  }
+
+  h1, h2, h3 {
+    font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
   }
 
   p {
@@ -80,33 +89,29 @@
   .text-balance {
     text-wrap: balance;
   }
-  
-  /* Vibrant Gradient Utilities */
+
+  /* Signature CTA — cyan gradient (brand) */
   .gradient-primary-secondary {
-    background-image: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    background-image: linear-gradient(135deg, hsl(187 100% 42%), hsl(199 90% 48%));
     color: white;
     border: none;
   }
-  
+
   .gradient-primary-secondary:hover {
-    background-image: linear-gradient(135deg, hsl(var(--secondary) / 0.9), hsl(var(--accent) / 0.9));
-    box-shadow: 0 4px 14px 0 hsl(var(--accent) / 0.3);
+    background-image: linear-gradient(135deg, hsl(187 100% 46%), hsl(199 90% 52%));
+    box-shadow: 0 4px 20px 0 hsl(187 100% 42% / 0.35);
   }
 
-  .gradient-warm {
-    background-image: linear-gradient(135deg, hsl(var(--warning)), hsl(var(--destructive)));
-    color: white;
-    border: none;
-  }
-  
-  .gradient-warm:hover {
-    background-image: linear-gradient(135deg, hsl(var(--warning) / 0.9), hsl(var(--destructive) / 0.9));
-    box-shadow: 0 4px 14px 0 hsl(var(--destructive) / 0.3);
+  /* Brand hairline — cyan to magenta strip */
+  .hairline-gradient {
+    background-image: linear-gradient(90deg, hsl(var(--secondary)), hsl(var(--accent)));
   }
 
-  .gradient-accent {
-    background-image: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
-    color: white;
-    border: none;
+  /* Brand gradient text — cyan to light blue */
+  .text-gradient-brand {
+    background-image: linear-gradient(90deg, hsl(var(--secondary)), hsl(var(--primary)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

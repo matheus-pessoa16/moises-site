@@ -10,7 +10,7 @@ export default function AlbumCard({ album, onClick, delay = 0 }) {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, delay }}
       onClick={() => onClick(album)}
-      className="album-card cursor-pointer rounded-lg overflow-hidden bg-card border border-border hover:border-primary/50 transition-colors"
+      className="album-card cursor-pointer rounded-xl overflow-hidden bg-card border border-white/10 hover:border-[hsl(var(--secondary))]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[hsl(var(--secondary))]/10"
     >
       <div className="aspect-video overflow-hidden bg-muted flex items-center justify-center">
         <img
@@ -22,10 +22,10 @@ export default function AlbumCard({ album, onClick, delay = 0 }) {
         />
       </div>
       <div className="px-4 py-3">
-        <span className="inline-block text-xs font-medium text-primary bg-primary/10 rounded-full px-3 py-1 mb-1">
+        <span className="inline-block text-xs font-medium text-[hsl(var(--secondary))] bg-[hsl(var(--secondary))]/10 rounded-full px-3 py-1 mb-1">
           {categoryLabel}
         </span>
-        <h3 className="text-sm font-semibold text-white truncate">{album.title}</h3>
+        <h3 className="text-sm font-semibold text-white truncate font-display">{album.title}</h3>
       </div>
     </motion.div>
   )

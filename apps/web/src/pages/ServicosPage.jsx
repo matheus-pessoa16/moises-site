@@ -7,6 +7,8 @@ import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { WhatsAppButton } from '@/components/WhatsAppLink.jsx';
+import PageHero from '@/components/PageHero.jsx';
+import CtaSection from '@/components/CtaSection.jsx';
 
 function ServicosPage() {
   const services = [
@@ -17,7 +19,7 @@ function ServicosPage() {
     description: 'Fachadas em ACM de alta qualidade que destacam sua marca com durabilidade e impacto visual. Utilizamos materiais premium e iluminação LED para garantir visibilidade 24 horas por dia.',
     image: 'https://horizons-cdn.hostinger.com/8cf04d40-a2cd-4e8d-966c-90768c888606/b08f42727d5c43268a55d2df057e9638.jpg',
     imageAlt: 'Fachada em ACM vermelha com logo SEU CHICO CONVENIÊNCIA em letras brancas 3D, iluminada com spots de LED',
-    colorVar: '--warning',
+    colorVar: '--secondary',
     benefits: [
       'Alta durabilidade e resistência',
       'Visibilidade noturna garantida com spot de LED',
@@ -32,7 +34,7 @@ function ServicosPage() {
     description: 'Estruturas profissionais para eventos de todos os tamanhos. Montagem de pórticos, camarotes, pontos de venda e ambientação completa para feiras, shows e eventos corporativos.',
     image: 'https://lh3.googleusercontent.com/d/1kYT20yjI-B6chpBdskr5ErMkRArqoyiZ=w1000?authuser=0',
     imageAlt: 'Pórtico da Finecap 2024',
-    colorVar: '--gold',
+    colorVar: '--accent',
     benefits: [
       'Estruturas robustas e seguras',
       'Montagem e desmontagem rápida',
@@ -80,7 +82,7 @@ function ServicosPage() {
     description: 'Uniformes personalizados que fortalecem a identidade visual da sua equipe. Qualidade superior em tecidos, bordados e acabamentos para empresas e eventos.',
     image: 'https://lh3.googleusercontent.com/d/1VsIJUJf0CkuYFNCOcWcISr0UzvYZweVE=w1000?authuser=0',
     imageAlt: 'Linha completa de uniformes personalizados para equipe corporativa',
-    colorVar: '--success',
+    colorVar: '--secondary',
     benefits: [
       'Tecidos de alta qualidade',
       'Personalização completa',
@@ -112,7 +114,7 @@ function ServicosPage() {
     description: 'Fachadas profissionais para empresas de todos os tamanhos. Letreiros luminosos, sinalização interna e externa com qualidade excepcional.',
     image: 'https://lh3.googleusercontent.com/d/1zYhRTijnT2tj52ix_0zzNUqPa1b67ERX=w1000?authuser=0',
     imageAlt: 'Fachada profissional para empresas com qualidade excepcional',
-    colorVar: '--warning',
+    colorVar: '--secondary',
     benefits: [
       'Projetos sob medida',
       'Materiais de alta qualidade',
@@ -128,7 +130,7 @@ function ServicosPage() {
     description: 'Brindes corporativos personalizados que encantam e fortalecem sua marca. Amplo catálogo de produtos incluindo agendas, canecas, crachás e muito mais.',
     image: 'https://lh3.googleusercontent.com/d/151ogyxesWMh5wX8m-wL9nPREYb0gA_hk=w1000?authuser=0',
     imageAlt: 'Kit de brindes corporativos personalizados',
-    colorVar: '--gold',
+    colorVar: '--accent',
     benefits: [
       'Amplo catálogo de produtos',
       'Personalização exclusiva',
@@ -198,24 +200,11 @@ function ServicosPage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="py-24 bg-muted relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--primary))]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center max-w-3xl mx-auto"
-            >
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{ letterSpacing: '-0.02em' }}>
-                Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))]">serviços</span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                Soluções vibrantes e completas em comunicação visual com qualidade profissional e atendimento personalizado.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <PageHero
+          title="Nossos"
+          highlight="serviços"
+          subtitle="Soluções vibrantes e completas em comunicação visual com qualidade profissional e atendimento personalizado."
+        />
 
         {/* Services Detail Section */}
         <section className="py-24">
@@ -275,7 +264,7 @@ function ServicosPage() {
                     </div>
                   </div>
                   <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                    <div className="rounded-3xl overflow-hidden shadow-2xl relative group">
+                    <div className="rounded-3xl overflow-hidden shadow-2xl relative group ring-1 ring-white/10">
                       <div className="absolute inset-0 bg-[hsl(var(--section-accent))]/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <img 
                         src={service.image} 
@@ -291,32 +280,12 @@ function ServicosPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 gradient-warm z-0"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-center max-w-3xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white">
-                Precisa de um orçamento personalizado?
-              </h2>
-              <p className="text-xl mb-10 text-white/90 leading-relaxed font-medium">
-                Nossa equipe está pronta para atender suas necessidades e criar a solução perfeita, com as cores e o impacto que sua marca exige.
-              </p>
-              <WhatsAppButton
-                message="Olá! Preciso de um orçamento personalizado."
-                size="lg"
-                className="bg-white text-[hsl(var(--destructive))] hover:bg-white/90 h-14 px-10 text-lg shadow-xl transition-all duration-300 active:scale-[0.98]"
-              >
-                Entre em contato agora
-              </WhatsAppButton>
-            </motion.div>
-          </div>
-        </section>
+        <CtaSection
+          title="Precisa de um orçamento personalizado?"
+          subtitle="Nossa equipe está pronta para atender suas necessidades e criar a solução perfeita, com as cores e o impacto que sua marca exige."
+          ctaLabel="Entre em contato agora"
+          ctaMessage="Olá! Preciso de um orçamento personalizado."
+        />
 
         <Footer />
       </div>

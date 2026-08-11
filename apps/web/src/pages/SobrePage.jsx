@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
+import PageHero from '@/components/PageHero.jsx';
+import SectionHeader from '@/components/SectionHeader.jsx';
 function SobrePage() {
   const values = [{
     icon: Award,
@@ -16,7 +18,7 @@ function SobrePage() {
     icon: Zap,
     title: 'Agilidade Notável',
     description: 'Prazos rigorosamente cumpridos e entregas rápidas com a mesma perfeição visual.',
-    color: '--warning'
+    color: '--secondary'
   }, {
     icon: Target,
     title: 'Inovação Constante',
@@ -26,7 +28,7 @@ function SobrePage() {
     icon: Users,
     title: 'Foco Total no Cliente',
     description: 'Atendimento humanizado e soluções sob medida para destacar a identidade única do seu negócio.',
-    color: '--success'
+    color: '--primary'
   }];
   return <>
       <Helmet>
@@ -38,29 +40,11 @@ function SobrePage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="py-24 bg-muted relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--success))]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.5
-          }} className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white" style={{
-              letterSpacing: '-0.02em'
-            }}>
-                Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))]">história</span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                Transformando a paisagem visual de eventos e empresas com paixão, cor e precisão técnica.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <PageHero
+          title="Nossa"
+          highlight="história"
+          subtitle="Transformando a paisagem visual de eventos e empresas com paixão, cor e precisão técnica."
+        />
 
         {/* Story Section */}
         <section className="py-24 bg-background">
@@ -127,8 +111,7 @@ function SobrePage() {
           }} transition={{
             duration: 0.5
           }} className="text-center mb-20">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white">O que nos move</h2>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--accent))] mx-auto rounded-full"></div>
+              <SectionHeader title="O que nos move" />
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">

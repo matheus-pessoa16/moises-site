@@ -1,9 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { motion } from 'framer-motion'
 import Header from '@/components/Header.jsx'
 import Footer from '@/components/Footer.jsx'
 import CareersForm from '@/components/CareersForm.jsx'
+import PageHero from '@/components/PageHero.jsx'
 
 function TrabalheConoscoPage() {
   return (
@@ -20,30 +20,11 @@ function TrabalheConoscoPage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="py-24 bg-muted relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[hsl(var(--accent))]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center max-w-3xl mx-auto"
-            >
-              <h1
-                className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white"
-                style={{ letterSpacing: '-0.02em' }}
-              >
-                Trabalhe{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))]">
-                  conosco
-                </span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                Envie seu currículo e venha fazer parte da nossa equipe.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <PageHero
+          title="Trabalhe"
+          highlight="conosco"
+          subtitle="Envie seu currículo e venha fazer parte da nossa equipe."
+        />
 
         {/* Form Section */}
         <section className="py-20 pb-32 bg-background flex-1">
